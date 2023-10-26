@@ -1,0 +1,43 @@
+ORGANIZATION_BLOCK PRINCIPAL:OB1
+TITLE=SECUENCIA COMPARADOR  //  JEVG
+BEGIN
+Network 1 // ARRANQUE  -  SET
+// Comentario de segmento
+LD     I0.0
+S      M0.0, 1
+Network 2 // PARO  -  RESET
+LD     I0.1
+O      T37
+R      M0.0, 1
+Network 3 // ARRANQUE TEMPORIZADOR
+LD     M0.0
+TON    T37, 115
+Network 4 // ARRANQUE Y0
+LD     M0.0
+AW<=   T37, 10
+=      Q0.0
+Network 5 // ARRANQUE Y1
+LDW>=  T37, 15
+AW<=   T37, 35
+=      Q0.1
+Network 6 // ARRANQUE Y2
+LDW>=  T37, 40
+AW<=   T37, 70
+=      Q0.2
+Network 7 // ARRANQUE Y3
+LDW>=  T37, 75
+AW<=   T37, 110
+=      Q0.3
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=COMENTARIOS DE LA SUBRUTINA
+BEGIN
+Network 1 // Título de segmento
+// Comentario de segmento
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=COMENTARIOS DE LA RUTINA DE INTERRUPCIÓN
+BEGIN
+Network 1 // Título de segmento
+// Comentario de segmento
+END_INTERRUPT_BLOCK
