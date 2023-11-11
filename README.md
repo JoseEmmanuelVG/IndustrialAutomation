@@ -6,6 +6,7 @@ Industrial automation theory and practice repository
 - [p4: Introduction to PLC Programming](docs/p4.md)
 - [p5: Coils for SET and RESET](docs/p5.md)
 - [p6: Introduction to PLC Timers](docs/p6.md)
+- [p7: Methodology for working with timers and Comparators](docs/p7.md)
 
 
 
