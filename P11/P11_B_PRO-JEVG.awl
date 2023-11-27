@@ -1,0 +1,83 @@
+ORGANIZATION_BLOCK PRINCIPAL:OB1
+TITLE=PRÁCTICA 11 Grafcet B - JEVG
+BEGIN
+Network 1 // EXTRA
+LD     SM0.1
+O      I0.1
+R      M0.0, 8
+R      M1.0, 8
+Network 2 
+LD     SM0.1
+O      I0.1
+O      M1.0
+=      M1.0
+Network 3 
+LD     I0.2
+A      I0.4
+O      M1.1
+A      M1.0
+=      M1.1
+Network 4 // Paso Inicial
+LDN    M0.1
+A      I0.0
+A      I0.2
+A      I0.4
+A      I0.6
+O      M0.1
+AN     M0.5
+A      I0.1
+=      M0.1
+Network 5 // Condiciones
+LD     I0.3
+O      M0.2
+A      M0.1
+=      M0.2
+Network 6 
+LD     I0.5
+O      M0.3
+A      M0.2
+=      M0.3
+Network 7 
+LD     I0.2
+O      M0.4
+A      M0.3
+=      M0.4
+Network 8 // Paso FINAL
+LD     I0.4
+A      M0.4
+=      M0.5
+Network 9 // SALIDA 1
+LD     M0.1
+AN     M0.2
+=      Q0.0
+Network 10 // SALIDA 2
+LD     M0.3
+AN     M0.4
+LD     M1.0
+A      M1.1
+OLD
+=      Q0.1
+Network 11 // SALIDA 3
+LD     M0.2
+AN     M0.3
+=      Q0.2
+Network 12 // SALIDA 4
+LD     M0.4
+AN     M0.5
+LD     M1.0
+A      M1.1
+OLD
+=      Q0.3
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=COMENTARIOS DE LA SUBRUTINA
+BEGIN
+Network 1 // Título de segmento
+// Comentario de segmento
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=COMENTARIOS DE LA RUTINA DE INTERRUPCIÓN
+BEGIN
+Network 1 // Título de segmento
+// Comentario de segmento
+END_INTERRUPT_BLOCK
