@@ -8,6 +8,7 @@ Industrial automation theory and practice repository
 - [p6: Introduction to PLC Timers](docs/p6.md)
 - [p7: Methodology for working with timers and Comparators](docs/p7.md)
 - [p8: Counters](docs/p8.md)
+- [p10: Analog Inputs](docs/p10.md)
 
 
 
